@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Inicio | NombreEmpresa" description="Soluciones digitales eficientes, diseño moderno y alto rendimiento.">
-  <!-- Fondo general -->
+<Layout title="Inicio | Sitio Genérico" description="Página moderna, adaptable y con diseño limpio.">
+  <!-- Sección Hero -->
   <section
     id="inicio"
     class="relative min-h-screen flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center"
@@ -13,94 +13,83 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="relative z-10 px-6">
       <h1 class="text-4xl sm:text-6xl font-bold text-[color:var(--color-primary)] mb-6 drop-shadow-lg">
-        Diseñamos experiencias digitales impactantes
+        Bienvenido a nuestro espacio digital
       </h1>
       <p class="text-[color:var(--color-text)]/90 max-w-2xl mx-auto text-lg leading-relaxed mb-8">
-        Combinamos diseño, tecnología y estrategia para crear sitios web rápidos, optimizados y atractivos.
+        Un sitio moderno, claro y adaptable a cualquier tipo de contenido o proyecto.
       </p>
       <a
         href="#contacto"
         class="bg-[color:var(--color-primary)] text-[color:var(--color-secondary)] font-semibold px-8 py-3 rounded-full shadow-md hover:scale-105 transition"
       >
-        Contáctanos
+        Saber más
       </a>
     </div>
   </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+  <!-- Sección de características -->
+  <section id="caracteristicas" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-12">Nuestros servicios</h2>
+      <h2 class="text-3xl font-semibold mb-12">Características principales</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Diseño web</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Diseño adaptable</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Creamos sitios visualmente atractivos y adaptados a todo dispositivo, con enfoque en la experiencia del usuario.
+            La estructura se ajusta automáticamente a cualquier tamaño de pantalla o dispositivo.
           </p>
         </div>
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Optimización SEO</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Contenido flexible</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Aumentá tu visibilidad online con prácticas SEO actualizadas para mejorar tu posicionamiento en buscadores.
+            Se puede adaptar fácilmente para mostrar información, productos o proyectos.
           </p>
         </div>
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Desarrollo personalizado</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Fácil personalización</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Soluciones a medida para cada negocio, integrando rendimiento, escalabilidad y funcionalidad.
+            Los colores, textos y secciones pueden ajustarse con simples cambios en las variables.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Proyectos -->
-  <section id="proyectos" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm">
+  <!-- Sección visual / galería -->
+  <section id="galeria" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-12">Proyectos destacados</h2>
+      <h2 class="text-3xl font-semibold mb-12">Galería de ejemplos</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/proyecto1.jpg" alt="Proyecto 1" class="w-full h-56 object-cover" />
-          <div class="p-4 bg-[color:var(--color-secondary)]/70">
-            <h4 class="text-lg font-semibold mb-1">Landing moderna</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Diseño limpio y enfocado en conversiones.</p>
-          </div>
+          <img src="/imagen1.jpg" alt="Imagen 1" class="w-full h-56 object-cover" />
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/proyecto2.jpg" alt="Proyecto 2" class="w-full h-56 object-cover" />
-          <div class="p-4 bg-[color:var(--color-secondary)]/70">
-            <h4 class="text-lg font-semibold mb-1">Tienda online</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Optimizada para rendimiento y SEO.</p>
-          </div>
+          <img src="/imagen2.jpg" alt="Imagen 2" class="w-full h-56 object-cover" />
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/proyecto3.jpg" alt="Proyecto 3" class="w-full h-56 object-cover" />
-          <div class="p-4 bg-[color:var(--color-secondary)]/70">
-            <h4 class="text-lg font-semibold mb-1">Portfolio personal</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Minimalismo y funcionalidad.</p>
-          </div>
+          <img src="/imagen3.jpg" alt="Imagen 3" class="w-full h-56 object-cover" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Nosotros -->
-  <section id="nosotros" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+  <!-- Sección informativa -->
+  <section id="informacion" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-6">Sobre nosotros</h2>
+      <h2 class="text-3xl font-semibold mb-6">Información general</h2>
       <p class="text-[color:var(--color-text)]/80 leading-relaxed max-w-3xl mx-auto">
-        Somos un equipo de diseñadores y desarrolladores apasionados por la innovación digital.  
-        Creemos que cada proyecto es una oportunidad para crear algo funcional, estético y duradero.
+        Este diseño fue creado como una plantilla base, ideal para proyectos personales, demostraciones o presentaciones
+        profesionales.  
+        Su estructura clara permite destacar cualquier tipo de contenido sin distraer al usuario.
       </p>
     </div>
   </section>
 
-  <!-- Contacto -->
+  <!-- Sección de contacto -->
   <section id="contacto" class="py-24 bg-[color:var(--color-secondary)]/80 backdrop-blur-md text-[color:var(--color-text)]">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-6">Hablemos sobre tu proyecto</h2>
+      <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
       <p class="mb-8 text-[color:var(--color-text)]/80">
-        Contanos tus ideas y trabajemos juntos para hacerlas realidad.
+        Si deseas más información o querés personalizar esta estructura, podés dejar un mensaje.
       </p>
 
       <form class="max-w-md mx-auto grid gap-4">
