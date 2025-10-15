@@ -1,23 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import WhatsappIcon from "../components/icons/WhatsappIcon.astro";
+import InstagramIcon from "../components/icons/InstagramIcon.astro";
+import GmailIcon from "../components/icons/GmailIcon.astro";
+import TelegramIcon from "../components/icons/TelegramIcon.astro";
+import LinkedInIcon from "../components/icons/LinkedinIcon.astro";
+import XIcon from "../components/icons/XIcon.astro";
+import TiktokIcon from "../components/icons/TiktokIcon.astro";
+import ThreadsIcon from "../components/icons/ThreadsIcon.astro";
+import FacebookIcon from "../components/icons/FacebookIcon.astro";
 ---
 
-<Layout title="Inicio | NombreEmpresa" description="Plantilla moderna de una sola página con diseño adaptable.">
-
+<Layout
+  title="Inicio | NombreEmpresa"
+  description="Plantilla moderna de una sola página con diseño adaptable."
+>
   <!-- SECCIÓN INICIO -->
   <section
     id="inicio"
     class="relative min-h-screen flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center scroll-mt-20"
     style="background-image: url('/images/tuFondo.jpg');"
   >
-    <div class="absolute inset-0 bg-[color:var(--color-secondary)]/80 backdrop-blur-sm"></div>
+    <div
+      class="absolute inset-0 bg-[color:var(--color-secondary)]/80 backdrop-blur-sm"
+    >
+    </div>
 
     <div class="relative z-10 px-6">
-      <h1 class="text-4xl sm:text-6xl font-bold text-[color:var(--color-text)] mb-6 drop-shadow-lg">
+      <h1
+        class="text-4xl sm:text-6xl font-bold text-[color:var(--color-text)] mb-6 drop-shadow-lg"
+      >
         Bienvenido
       </h1>
-      <p class="text-[color:var(--color-text)]/90 max-w-2xl mx-auto text-lg leading-relaxed mb-8">
-        Un espacio flexible para mostrar información, proyectos o servicios de forma simple y atractiva.
+      <p
+        class="text-[color:var(--color-text)]/90 max-w-2xl mx-auto text-lg leading-relaxed mb-8"
+      >
+        Un espacio flexible para mostrar información, proyectos o servicios de
+        forma simple y atractiva.
       </p>
       <a
         href="#contacto"
@@ -29,26 +49,44 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- SECCIÓN SERVICIOS -->
-  <section id="servicios" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20">
+  <section
+    id="servicios"
+    class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20"
+  >
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-12">Servicios</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Diseño adaptable</h3>
+        <div
+          class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
+        >
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+            Diseño adaptable
+          </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Estructuras visuales pensadas para cualquier tipo de dispositivo o tamaño de pantalla.
+            Estructuras visuales pensadas para cualquier tipo de dispositivo o
+            tamaño de pantalla.
           </p>
         </div>
-        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Contenido modular</h3>
+        <div
+          class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
+        >
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+            Contenido modular
+          </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Bloques fácilmente reutilizables y personalizables para distintos proyectos o presentaciones.
+            Bloques fácilmente reutilizables y personalizables para distintos
+            proyectos o presentaciones.
           </p>
         </div>
-        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Diseño limpio</h3>
+        <div
+          class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
+        >
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+            Diseño limpio
+          </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Enfocado en claridad visual, equilibrio y una experiencia agradable para el usuario.
+            Enfocado en claridad visual, equilibrio y una experiencia agradable
+            para el usuario.
           </p>
         </div>
       </div>
@@ -56,29 +94,56 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- SECCIÓN PROYECTOS -->
-  <section id="proyectos" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm scroll-mt-20">
+  <section
+    id="proyectos"
+    class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm scroll-mt-20"
+  >
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-12">Proyectos</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/images/proyecto1.png" alt="Proyecto 1" class="w-full h-56 object-cover" />
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="/images/proyecto1.png"
+            alt="Proyecto 1"
+            class="w-full h-56 object-cover"
+          />
           <div class="p-4 bg-[color:var(--color-secondary)]/70">
             <h4 class="text-lg font-semibold mb-1">Proyecto genérico 1</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Ejemplo de presentación visual adaptable.</p>
+            <p class="text-sm text-[color:var(--color-text)]/70">
+              Ejemplo de presentación visual adaptable.
+            </p>
           </div>
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/images/proyecto2.png" alt="Proyecto 2" class="w-full h-56 object-cover" />
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="/images/proyecto2.png"
+            alt="Proyecto 2"
+            class="w-full h-56 object-cover"
+          />
           <div class="p-4 bg-[color:var(--color-secondary)]/70">
             <h4 class="text-lg font-semibold mb-1">Proyecto genérico 2</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Diseño limpio y enfoque visual equilibrado.</p>
+            <p class="text-sm text-[color:var(--color-text)]/70">
+              Diseño limpio y enfoque visual equilibrado.
+            </p>
           </div>
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/images/proyecto3.png" alt="Proyecto 3" class="w-full h-56 object-cover" />
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="/images/proyecto3.png"
+            alt="Proyecto 3"
+            class="w-full h-56 object-cover"
+          />
           <div class="p-4 bg-[color:var(--color-secondary)]/70">
             <h4 class="text-lg font-semibold mb-1">Proyecto genérico 3</h4>
-            <p class="text-sm text-[color:var(--color-text)]/70">Ideal para mostrar imágenes o contenido visual.</p>
+            <p class="text-sm text-[color:var(--color-text)]/70">
+              Ideal para mostrar imágenes o contenido visual.
+            </p>
           </div>
         </div>
       </div>
@@ -86,32 +151,157 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- SECCIÓN NOSOTROS -->
-  <section id="nosotros" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20">
+  <section
+    id="nosotros"
+    class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20"
+  >
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-6">Nosotros</h2>
-      <p class="text-[color:var(--color-text)]/80 leading-relaxed max-w-3xl mx-auto">
-        Esta plantilla representa un modelo simple de una página informativa.  
-        Cada sección puede personalizarse según las necesidades del sitio o del tipo de contenido que se quiera destacar.
+      <p
+        class="text-[color:var(--color-text)]/80 leading-relaxed max-w-3xl mx-auto"
+      >
+        Esta plantilla representa un modelo simple de una página informativa.
+        Cada sección puede personalizarse según las necesidades del sitio o del
+        tipo de contenido que se quiera destacar.
       </p>
     </div>
   </section>
 
   <!-- SECCIÓN CONTACTO -->
-  <section id="contacto" class="py-24 bg-[color:var(--color-secondary)]/80 backdrop-blur-md text-[color:var(--color-text)] scroll-mt-20">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
-      <p class="mb-8 text-[color:var(--color-text)]/80">
-        Si deseas realizar una consulta o conocer más sobre cómo personalizar este diseño, completá el siguiente formulario.
-      </p>
+  <section
+    id="contacto"
+    class="min-h-screen flex flex-col justify-center items-center py-24 px-6 bg-[color:var(--color-bg)] text-[color:var(--color-text)]"
+  >
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10">
+      <!-- FORMULARIO -->
+      <div class="bg-[color:var(--color-secondary)] p-8 rounded-2xl shadow-lg">
+        <h2 class="text-2xl font-bold text-[color:var(--color-primary)] mb-6">
+          Envíanos un mensaje
+        </h2>
+        <form class="flex flex-col space-y-4">
+          <input
+            type="text"
+            placeholder="Tu nombre"
+            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
+          />
+          <input
+            type="email"
+            placeholder="Tu correo"
+            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
+          />
+          <textarea
+            placeholder="Tu mensaje"
+            rows="4"
+            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
+          ></textarea>
 
-      <form class="max-w-md mx-auto grid gap-4">
-        <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
-        <input type="email" placeholder="Tu correo" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
-        <textarea rows="4" placeholder="Tu mensaje" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"></textarea>
-        <button class="bg-[color:var(--color-text)] text-[color:var(--color-secondary)] font-semibold py-3 rounded-full shadow-md hover:scale-105 transition">
-          Enviar mensaje
-        </button>
-      </form>
+          <button
+            type="submit"
+            class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition"
+          >
+            Enviar por WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <!-- PANEL LATERAL -->
+      <div class="bg-[color:var(--color-secondary)] p-8 rounded-2xl shadow-lg">
+        <h2 class="text-2xl font-bold text-[color:var(--color-primary)] mb-4">
+          Contacto
+        </h2>
+
+        <p class="text-sm mb-6 text-gray-300">
+          ¿Querés escribirme directamente? Estas son las formas más rápidas de
+          ponerte en contacto conmigo:
+        </p>
+
+        <!-- Correo -->
+        <div class="flex items-center gap-3 mb-6">
+          <GmailIcon class="w-6 h-6 text-[color:var(--color-primary)]" />
+          <a
+            href="mailto:contacto@ejemplo.com"
+            class="hover:text-[color:var(--color-primary)] transition"
+          >
+            contacto@ejemplo.com
+          </a>
+        </div>
+
+        <!-- Redes -->
+        <h3 class="text-lg font-semibold mb-3">Redes sociales</h3>
+        <div class="flex gap-3 mb-8">
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><InstagramIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><LinkedInIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><TelegramIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><XIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><WhatsappIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><TiktokIcon class="w-5 h-5" /></a
+          >
+          <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><ThreadsIcon class="w-5 h-5" /></a
+          >
+        <a
+            href="#"
+            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+            ><FacebookIcon class="w-5 h-5" /></a
+          >
+        </div>
+
+        <p class="text-sm text-gray-300 mb-6">
+          Además de escribirme, seguime en redes: comparto contenido de
+          crecimiento personal, motivación y estrategias digitales todos los
+          días. ¡Sumate y mantenete inspirado!
+        </p>
+
+        <!-- Por qué contactarme -->
+        <div class="bg-black/40 p-4 rounded-xl">
+          <h4 class="font-semibold mb-3">¿Por qué contactarme?</h4>
+          <ul class="space-y-2 text-sm">
+            <li>✅ Atención personalizada</li>
+            <li>✅ Respuesta rápida</li>
+            <li>✅ Asesoramiento sin compromiso</li>
+            <li>✅ Comunicación directa por redes</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
+
+<script is:inline>
+  function sendWhatsAppMessage() {
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
+    const telefono = "5491122334455"; // <-- CAMBIAR POR TU NÚMERO (con código de país)
+    const texto = encodeURIComponent(
+      `Hola! Soy ${nombre} (${email}).%0A%0A${mensaje}`
+    );
+    const url = `https://wa.me/${telefono}?text=${texto}`;
+    window.open(url, "_blank");
+  }
+</script>
