@@ -24,8 +24,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
   >
     <div
       class="absolute inset-0 bg-[color:var(--color-secondary)]/80 backdrop-blur-sm"
-    >
-    </div>
+    ></div>
 
     <div class="relative z-10 px-6">
       <h1
@@ -59,7 +58,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <div
           class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
         >
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+          <h3 class="text-xl font-semibold mb-2">
             Diseño adaptable
           </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
@@ -70,7 +69,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <div
           class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
         >
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+          <h3 class="text-xl font-semibold mb-2">
             Contenido modular
           </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
@@ -81,7 +80,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <div
           class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition"
         >
-          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">
+          <h3 class="text-xl font-semibold mb-2">
             Diseño limpio
           </h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
@@ -179,26 +178,11 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
           Envíanos un mensaje
         </h2>
         <form class="flex flex-col space-y-4">
-          <input
-            type="text"
-            placeholder="Tu nombre"
-            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
-          />
-          <input
-            type="email"
-            placeholder="Tu correo"
-            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
-          />
-          <textarea
-            placeholder="Tu mensaje"
-            rows="4"
-            class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"
-          ></textarea>
+          <input id="nombre" type="text" placeholder="Tu nombre" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
+          <input id="email" type="email" placeholder="Tu correo" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
+          <textarea id="mensaje" placeholder="Tu mensaje" rows="4" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"></textarea>
 
-          <button
-            type="submit"
-            class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition"
-          >
+          <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition">
             Enviar por WhatsApp
           </button>
         </form>
@@ -218,57 +202,29 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <!-- Correo -->
         <div class="flex items-center gap-3 mb-6">
           <GmailIcon class="w-6 h-6 text-[color:var(--color-primary)]" />
-          <a
-            href="mailto:contacto@ejemplo.com"
-            class="hover:text-[color:var(--color-primary)] transition"
-          >
+          <a id="correo" href="mailto:contacto@ejemplo.com" class="hover:text-[color:var(--color-primary)] transition">
             contacto@ejemplo.com
           </a>
+          <button
+            type="button"
+            onclick="copyEmail()"
+            class="ml-2 text-xs px-2 py-1 bg-[color:var(--color-primary)]/20 text-[color:var(--color-primary)] rounded hover:bg-[color:var(--color-primary)]/30 transition"
+          >
+            Copiar
+          </button>
         </div>
 
         <!-- Redes -->
         <h3 class="text-lg font-semibold mb-3">Redes sociales</h3>
-        <div class="flex gap-3 mb-8">
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><InstagramIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><LinkedInIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><TelegramIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><XIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><WhatsappIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><TiktokIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><ThreadsIcon class="w-5 h-5" /></a
-          >
-        <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><FacebookIcon class="w-5 h-5" /></a
-          >
+        <div class="flex flex-wrap gap-3 mb-8">
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><InstagramIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><LinkedInIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><TelegramIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><XIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><WhatsappIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><TiktokIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><ThreadsIcon class="w-5 h-5" /></a>
+          <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><FacebookIcon class="w-5 h-5" /></a>
         </div>
 
         <p class="text-sm text-gray-300 mb-6">
@@ -292,16 +248,27 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
   </section>
 </Layout>
 
+<!-- SCRIPTS -->
 <script is:inline>
   function sendWhatsAppMessage() {
     const nombre = document.getElementById("nombre").value;
     const email = document.getElementById("email").value;
     const mensaje = document.getElementById("mensaje").value;
-    const telefono = "5491122334455"; // <-- CAMBIAR POR TU NÚMERO (con código de país)
+    const telefono = "5491122334455"; // <-- CAMBIAR POR TU NÚMERO
     const texto = encodeURIComponent(
       `Hola! Soy ${nombre} (${email}).%0A%0A${mensaje}`
     );
     const url = `https://wa.me/${telefono}?text=${texto}`;
     window.open(url, "_blank");
+  }
+
+  function copyEmail() {
+    const email = "contacto@ejemplo.com";
+    navigator.clipboard.writeText(email).then(() => {
+      const button = event.target;
+      const originalText = button.textContent;
+      button.textContent = "Copiado!";
+      setTimeout(() => (button.textContent = originalText), 2000);
+    });
   }
 </script>
