@@ -2,101 +2,113 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Inicio | Sitio Genérico" description="Página moderna, adaptable y con diseño limpio.">
-  <!-- Sección Hero -->
+<Layout title="Inicio | NombreEmpresa" description="Plantilla moderna de una sola página con diseño adaptable.">
+
+  <!-- SECCIÓN INICIO -->
   <section
     id="inicio"
-    class="relative min-h-screen flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center"
-    style="background-image: url('/fondo.jpg');"
+    class="relative min-h-screen flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center scroll-mt-20"
+    style="background-image: url('/images/tuFondo.jpg');"
   >
     <div class="absolute inset-0 bg-[color:var(--color-secondary)]/80 backdrop-blur-sm"></div>
 
     <div class="relative z-10 px-6">
-      <h1 class="text-4xl sm:text-6xl font-bold text-[color:var(--color-primary)] mb-6 drop-shadow-lg">
-        Bienvenido a nuestro espacio digital
+      <h1 class="text-4xl sm:text-6xl font-bold text-[color:var(--color-text)] mb-6 drop-shadow-lg">
+        Bienvenido
       </h1>
       <p class="text-[color:var(--color-text)]/90 max-w-2xl mx-auto text-lg leading-relaxed mb-8">
-        Un sitio moderno, claro y adaptable a cualquier tipo de contenido o proyecto.
+        Un espacio flexible para mostrar información, proyectos o servicios de forma simple y atractiva.
       </p>
       <a
         href="#contacto"
-        class="bg-[color:var(--color-primary)] text-[color:var(--color-secondary)] font-semibold px-8 py-3 rounded-full shadow-md hover:scale-105 transition"
+        class="bg-[color:var(--color-text)] text-[color:var(--color-secondary)] font-semibold px-8 py-3 rounded-full shadow-md hover:scale-105 transition"
       >
-        Saber más
+        Comenzar
       </a>
     </div>
   </section>
 
-  <!-- Sección de características -->
-  <section id="caracteristicas" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-12">Características principales</h2>
+      <h2 class="text-3xl font-semibold mb-12">Servicios</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Diseño adaptable</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Diseño adaptable</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            La estructura se ajusta automáticamente a cualquier tamaño de pantalla o dispositivo.
+            Estructuras visuales pensadas para cualquier tipo de dispositivo o tamaño de pantalla.
           </p>
         </div>
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Contenido flexible</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Contenido modular</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Se puede adaptar fácilmente para mostrar información, productos o proyectos.
+            Bloques fácilmente reutilizables y personalizables para distintos proyectos o presentaciones.
           </p>
         </div>
         <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
-          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Fácil personalización</h3>
+          <h3 class="text-xl font-semibold text-[color:var(--color-text)] mb-2">Diseño limpio</h3>
           <p class="text-sm text-[color:var(--color-text)]/80">
-            Los colores, textos y secciones pueden ajustarse con simples cambios en las variables.
+            Enfocado en claridad visual, equilibrio y una experiencia agradable para el usuario.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección visual / galería -->
-  <section id="galeria" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm">
+  <!-- SECCIÓN PROYECTOS -->
+  <section id="proyectos" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm scroll-mt-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-12">Galería de ejemplos</h2>
+      <h2 class="text-3xl font-semibold mb-12">Proyectos</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/imagen1.jpg" alt="Imagen 1" class="w-full h-56 object-cover" />
+          <img src="/images/proyecto1.png" alt="Proyecto 1" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Proyecto genérico 1</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Ejemplo de presentación visual adaptable.</p>
+          </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/imagen2.jpg" alt="Imagen 2" class="w-full h-56 object-cover" />
+          <img src="/images/proyecto2.png" alt="Proyecto 2" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Proyecto genérico 2</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Diseño limpio y enfoque visual equilibrado.</p>
+          </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="/imagen3.jpg" alt="Imagen 3" class="w-full h-56 object-cover" />
+          <img src="/images/proyecto3.png" alt="Proyecto 3" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Proyecto genérico 3</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Ideal para mostrar imágenes o contenido visual.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección informativa -->
-  <section id="informacion" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+  <!-- SECCIÓN NOSOTROS -->
+  <section id="nosotros" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)] scroll-mt-20">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-6">Información general</h2>
+      <h2 class="text-3xl font-semibold mb-6">Nosotros</h2>
       <p class="text-[color:var(--color-text)]/80 leading-relaxed max-w-3xl mx-auto">
-        Este diseño fue creado como una plantilla base, ideal para proyectos personales, demostraciones o presentaciones
-        profesionales.  
-        Su estructura clara permite destacar cualquier tipo de contenido sin distraer al usuario.
+        Esta plantilla representa un modelo simple de una página informativa.  
+        Cada sección puede personalizarse según las necesidades del sitio o del tipo de contenido que se quiera destacar.
       </p>
     </div>
   </section>
 
-  <!-- Sección de contacto -->
-  <section id="contacto" class="py-24 bg-[color:var(--color-secondary)]/80 backdrop-blur-md text-[color:var(--color-text)]">
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="py-24 bg-[color:var(--color-secondary)]/80 backdrop-blur-md text-[color:var(--color-text)] scroll-mt-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
       <p class="mb-8 text-[color:var(--color-text)]/80">
-        Si deseas más información o querés personalizar esta estructura, podés dejar un mensaje.
+        Si deseas realizar una consulta o conocer más sobre cómo personalizar este diseño, completá el siguiente formulario.
       </p>
 
       <form class="max-w-md mx-auto grid gap-4">
         <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
         <input type="email" placeholder="Tu correo" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
         <textarea rows="4" placeholder="Tu mensaje" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"></textarea>
-        <button class="bg-[color:var(--color-primary)] text-[color:var(--color-secondary)] font-semibold py-3 rounded-full shadow-md hover:scale-105 transition">
+        <button class="bg-[color:var(--color-text)] text-[color:var(--color-secondary)] font-semibold py-3 rounded-full shadow-md hover:scale-105 transition">
           Enviar mensaje
         </button>
       </form>
