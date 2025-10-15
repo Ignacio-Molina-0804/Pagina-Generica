@@ -1,44 +1,52 @@
 ---
+// En la parte del script (frontmatter)
 ---
 
 <footer class="bg-[color:var(--color-secondary)] text-[color:var(--color-text)] mt-20">
-  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
-    <!-- LOGO + DESCRIPCIÓN -->
-    <div>
-      <a href="#inicio" class="flex items-center space-x-2 mb-4">
-        <img src="/images/tuLogo.png" alt="Logo genérico" class="h-20 w-auto" />
-        <span class="font-semibold text-lg text-[color:var(--color-text)]">NombreEmpresa</span>
-      </a>
-      <p class="text-sm leading-relaxed text-[color:var(--color-text)]/80">
-        Creamos soluciones digitales eficientes, enfocadas en diseño, rendimiento y experiencia del usuario.
-      </p>
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <!-- PRIMERA FILA: LOGO + DESCRIPCIÓN -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+      <!-- LOGO + DESCRIPCIÓN (ocupa toda la fila en móvil) -->
+      <div class="lg:col-span-1">
+        <a href="#inicio" class="flex items-center space-x-2 mb-4">
+          <img src="/images/tuLogo.png" alt="Logo genérico" class="h-20 w-auto" />
+          <span class="font-semibold text-lg text-[color:var(--color-text)]">NombreEmpresa</span>
+        </a>
+        <p class="text-sm leading-relaxed text-[color:var(--color-text)]/80">
+          Creamos soluciones digitales eficientes, enfocadas en diseño, rendimiento y experiencia del usuario.
+        </p>
+      </div>
+
+      <!-- SEGUNDA FILA EN MÓVIL: ENLACES + CONTACTO LADO A LADO -->
+      <div class="lg:col-span-2 grid grid-cols-2 gap-8">
+        <!-- ENLACES -->
+        <div>
+          <h3 class="text-[color:var(--color-text)] font-semibold mb-3">Enlaces útiles</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#inicio" class="hover:text-[color:var(--color-primary)] transition">Inicio</a></li>
+            <li><a href="#servicios" class="hover:text-[color:var(--color-primary)] transition">Servicios</a></li>
+            <li><a href="#proyectos" class="hover:text-[color:var(--color-primary)] transition">Proyectos</a></li>
+            <li><a href="#nosotros" class="hover:text-[color:var(--color-primary)] transition">Nosotros</a></li>
+            <li><a href="#contacto" class="hover:text-[color:var(--color-primary)] transition">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACTO / REDES -->
+        <div>
+          <h3 class="text-[color:var(--color-text)] font-semibold mb-3">Contacto</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:info@empresa.com" class="hover:text-[color:var(--color-primary)] transition">info@empresa.com</a></li>
+            <li><a href="tel:+540000000000" class="hover:text-[color:var(--color-primary)] transition">+54 00 0000-0000</a></li>
+            <li><a href="#" target="_blank" class="hover:text-[color:var(--color-primary)] transition">Instagram</a></li>
+            <li><a href="#" target="_blank" class="hover:text-[color:var(--color-primary)] transition">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- ENLACES -->
-    <div>
-      <h3 class="text-[color:var(--color-text)] font-semibold mb-3">Enlaces útiles</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#inicio" class="hover:text-[color:var(--color-primary)] transition">Inicio</a></li>
-        <li><a href="#servicios" class="hover:text-[color:var(--color-primary)] transition">Servicios</a></li>
-        <li><a href="#proyectos" class="hover:text-[color:var(--color-primary)] transition">Proyectos</a></li>
-        <li><a href="#nosotros" class="hover:text-[color:var(--color-primary)] transition">Nosotros</a></li>
-        <li><a href="#contacto" class="hover:text-[color:var(--color-primary)] transition">Contacto</a></li>
-      </ul>
+    <!-- COPYRIGHT -->
+    <div class="border-t border-[color:var(--color-text)]/20 pt-8 text-center text-sm text-[color:var(--color-text)]/60">
+      © {new Date().getFullYear()} NombreEmpresa. Todos los derechos reservados.
     </div>
-
-    <!-- CONTACTO / REDES -->
-    <div>
-      <h3 class="text-[color:var(--color-text)] font-semibold mb-3">Contacto</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="mailto:info@empresa.com" class="hover:text-[color:var(--color-primary)] transition">info@empresa.com</a></li>
-        <li><a href="tel:+540000000000" class="hover:text-[color:var(--color-primary)] transition">+54 00 0000-0000</a></li>
-        <li><a href="#" target="_blank" class="hover:text-[color:var(--color-primary)] transition">Instagram</a></li>
-        <li><a href="#" target="_blank" class="hover:text-[color:var(--color-primary)] transition">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="border-t border-[color:var(--color-text)]/20 mt-8 py-4 text-center text-sm text-[color:var(--color-text)]/60">
-    © {new Date().getFullYear()} NombreEmpresa. Todos los derechos reservados.
   </div>
 </footer>
