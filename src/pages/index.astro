@@ -2,85 +2,115 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Soluciones Web Modernas" description="Landing page profesional de una sola vista.">
-  <!-- HERO -->
-  <section id="inicio" class="text-center py-28 max-w-5xl mx-auto px-6">
-    <h1 class="text-5xl font-bold text-primary mb-6">Impulsá tu marca con una web moderna</h1>
-    <p class="text-lg text-text/80 mb-10">
-      Diseño, desarrollo y optimización en una sola experiencia. Todo lo que necesitás para destacar online.
-    </p>
-    <a href="#contacto" class="bg-primary text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
-      Comenzar ahora
-    </a>
-  </section>
+<Layout title="Inicio | NombreEmpresa" description="Soluciones digitales eficientes, diseño moderno y alto rendimiento.">
+  <!-- Fondo general -->
+  <section
+    id="inicio"
+    class="relative min-h-screen flex flex-col items-center justify-center text-center bg-fixed bg-cover bg-center"
+    style="background-image: url('/fondo.jpg');"
+  >
+    <div class="absolute inset-0 bg-[color:var(--color-secondary)]/80 backdrop-blur-sm"></div>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="py-20 bg-card text-center">
-    <h2 class="text-4xl font-bold text-primary mb-12">Servicios</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="p-6 rounded-2xl border border-border">
-        <h3 class="text-xl font-semibold mb-3">Diseño Web</h3>
-        <p class="text-text/80">Interfaces limpias, usables y pensadas para captar la atención del usuario.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-border">
-        <h3 class="text-xl font-semibold mb-3">Desarrollo</h3>
-        <p class="text-text/80">Sitios rápidos, seguros y optimizados con tecnologías modernas.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-border">
-        <h3 class="text-xl font-semibold mb-3">SEO & Rendimiento</h3>
-        <p class="text-text/80">Aparecé en los primeros resultados con optimización avanzada.</p>
-      </div>
+    <div class="relative z-10 px-6">
+      <h1 class="text-4xl sm:text-6xl font-bold text-[color:var(--color-primary)] mb-6 drop-shadow-lg">
+        Diseñamos experiencias digitales impactantes
+      </h1>
+      <p class="text-[color:var(--color-text)]/90 max-w-2xl mx-auto text-lg leading-relaxed mb-8">
+        Combinamos diseño, tecnología y estrategia para crear sitios web rápidos, optimizados y atractivos.
+      </p>
+      <a
+        href="#contacto"
+        class="bg-[color:var(--color-primary)] text-[color:var(--color-secondary)] font-semibold px-8 py-3 rounded-full shadow-md hover:scale-105 transition"
+      >
+        Contáctanos
+      </a>
     </div>
   </section>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="py-20 text-center">
-    <h2 class="text-4xl font-bold text-primary mb-12">Proyectos Destacados</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-card rounded-2xl overflow-hidden shadow">
-        <img src="/images/proyecto1.jpg" alt="Proyecto 1" class="w-full" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Landing Page Corporativa</h3>
-          <p class="text-text/80 text-sm">Diseño limpio y orientado a la conversión.</p>
+  <!-- Servicios -->
+  <section id="servicios" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-12">Nuestros servicios</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Diseño web</h3>
+          <p class="text-sm text-[color:var(--color-text)]/80">
+            Creamos sitios visualmente atractivos y adaptados a todo dispositivo, con enfoque en la experiencia del usuario.
+          </p>
         </div>
-      </div>
-      <div class="bg-card rounded-2xl overflow-hidden shadow">
-        <img src="/images/proyecto2.jpg" alt="Proyecto 2" class="w-full" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Tienda Online</h3>
-          <p class="text-text/80 text-sm">E-commerce optimizado con integración de pagos.</p>
+        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Optimización SEO</h3>
+          <p class="text-sm text-[color:var(--color-text)]/80">
+            Aumentá tu visibilidad online con prácticas SEO actualizadas para mejorar tu posicionamiento en buscadores.
+          </p>
         </div>
-      </div>
-      <div class="bg-card rounded-2xl overflow-hidden shadow">
-        <img src="/images/proyecto3.jpg" alt="Proyecto 3" class="w-full" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Portfolio Personal</h3>
-          <p class="text-text/80 text-sm">Sitio minimalista, rápido y elegante.</p>
+        <div class="p-6 bg-white/5 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-[color:var(--color-primary)] mb-2">Desarrollo personalizado</h3>
+          <p class="text-sm text-[color:var(--color-text)]/80">
+            Soluciones a medida para cada negocio, integrando rendimiento, escalabilidad y funcionalidad.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="py-20 bg-card text-center">
-    <h2 class="text-4xl font-bold text-primary mb-8">Sobre Nosotros</h2>
-    <p class="max-w-3xl mx-auto text-text/80">
-      Somos un equipo apasionado por la tecnología y el diseño. Nuestro objetivo es ayudarte a construir una presencia
-      digital sólida y efectiva, enfocada en resultados reales.
-    </p>
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-24 bg-[color:var(--color-secondary)]/60 text-[color:var(--color-text)] backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-12">Proyectos destacados</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="/proyecto1.jpg" alt="Proyecto 1" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Landing moderna</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Diseño limpio y enfocado en conversiones.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="/proyecto2.jpg" alt="Proyecto 2" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Tienda online</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Optimizada para rendimiento y SEO.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="/proyecto3.jpg" alt="Proyecto 3" class="w-full h-56 object-cover" />
+          <div class="p-4 bg-[color:var(--color-secondary)]/70">
+            <h4 class="text-lg font-semibold mb-1">Portfolio personal</h4>
+            <p class="text-sm text-[color:var(--color-text)]/70">Minimalismo y funcionalidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="py-20 text-center">
-    <h2 class="text-4xl font-bold text-primary mb-6">Contacto</h2>
-    <p class="text-text/80 mb-10">Dejanos tu mensaje y te responderemos a la brevedad.</p>
-    <form class="max-w-md mx-auto space-y-4">
-      <input type="text" placeholder="Tu nombre" class="w-full px-4 py-3 rounded-lg bg-card border border-border" />
-      <input type="email" placeholder="Tu correo" class="w-full px-4 py-3 rounded-lg bg-card border border-border" />
-      <textarea placeholder="Tu mensaje" rows="4" class="w-full px-4 py-3 rounded-lg bg-card border border-border"></textarea>
-      <button type="submit" class="bg-primary text-bg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
-        Enviar
-      </button>
-    </form>
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-24 bg-[color:var(--color-secondary)] text-[color:var(--color-text)]">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Sobre nosotros</h2>
+      <p class="text-[color:var(--color-text)]/80 leading-relaxed max-w-3xl mx-auto">
+        Somos un equipo de diseñadores y desarrolladores apasionados por la innovación digital.  
+        Creemos que cada proyecto es una oportunidad para crear algo funcional, estético y duradero.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-24 bg-[color:var(--color-secondary)]/80 backdrop-blur-md text-[color:var(--color-text)]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Hablemos sobre tu proyecto</h2>
+      <p class="mb-8 text-[color:var(--color-text)]/80">
+        Contanos tus ideas y trabajemos juntos para hacerlas realidad.
+      </p>
+
+      <form class="max-w-md mx-auto grid gap-4">
+        <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
+        <input type="email" placeholder="Tu correo" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" />
+        <textarea rows="4" placeholder="Tu mensaje" class="w-full p-3 rounded-md bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"></textarea>
+        <button class="bg-[color:var(--color-primary)] text-[color:var(--color-secondary)] font-semibold py-3 rounded-full shadow-md hover:scale-105 transition">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
   </section>
 </Layout>
