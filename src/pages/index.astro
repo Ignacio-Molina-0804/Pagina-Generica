@@ -180,9 +180,9 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <form class="flex flex-col space-y-4">
           <input id="nombre" type="text" placeholder="Tu nombre" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
           <input id="email" type="email" placeholder="Tu correo" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
-          <textarea id="mensaje" placeholder="Tu mensaje" rows="4" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition"></textarea>
+          <textarea id="mensaje" placeholder="Tu mensaje" rows="4" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition resize-none"></textarea>
 
-          <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition">
+          <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition cursor-pointer">
             Enviar por WhatsApp
           </button>
         </form>
@@ -208,7 +208,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
           <button
             type="button"
             onclick="copyEmail()"
-            class="ml-2 text-xs px-2 py-1 bg-[color:var(--color-primary)]/20 text-[color:var(--color-primary)] rounded hover:bg-[color:var(--color-primary)]/30 transition"
+            class="ml-2 text-xs px-2 py-1 bg-[color:var(--color-primary)]/20 text-[color:var(--color-primary)] rounded hover:bg-[color:var(--color-primary)]/30 transition cursor-pointer"
           >
             Copiar
           </button>
