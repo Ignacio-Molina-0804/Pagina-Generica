@@ -173,46 +173,46 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
   <!-- SECCIÓN CONTACTO -->
   <section
     id="contacto"
-    class="min-h-screen flex flex-col justify-center items-center py-24 px-6 bg-[color:var(--color-bg)] text-[color:var(--color-text)]"
+    class="min-h-screen flex flex-col justify-center items-center py-20 sm:py-24 px-4 sm:px-6 bg-[color:var(--color-bg)] text-[color:var(--color-text)]"
   >
-    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- FORMULARIO -->
-      <div class="bg-[color:var(--color-secondary)] p-8 rounded-2xl shadow-lg">
-        <h2 class="text-2xl font-bold text-[color:var(--color-text)] mb-6">
+      <div class="bg-[color:var(--color-secondary)] p-6 sm:p-8 rounded-2xl shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-bold text-[color:var(--color-text)] mb-6">
           Envíanos un mensaje
         </h2>
         <form class="flex flex-col space-y-4">
-          <input id="nombre" type="text" placeholder="Tu nombre" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
-          <input id="email" type="email" placeholder="Tu correo" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition" />
-          <textarea id="mensaje" placeholder="Tu mensaje" rows="4" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition resize-none"></textarea>
+          <input id="nombre" type="text" placeholder="Tu nombre" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition text-sm sm:text-base" />
+          <input id="email" type="email" placeholder="Tu correo" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition text-sm sm:text-base" />
+          <textarea id="mensaje" placeholder="Tu mensaje" rows="4" class="p-3 rounded-lg bg-black/40 border border-black/30 focus:outline-none focus:border-[color:var(--color-primary)] transition resize-none text-sm sm:text-base"></textarea>
 
-          <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition cursor-pointer">
+          <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 bg-[color:var(--color-primary)] text-black font-semibold py-3 rounded-lg hover:opacity-90 transition cursor-pointer text-sm sm:text-base">
             Enviar por WhatsApp
           </button>
         </form>
       </div>
 
       <!-- PANEL LATERAL -->
-      <div class="bg-[color:var(--color-secondary)] p-8 rounded-2xl shadow-lg">
-        <h2 class="text-2xl font-bold text-[color:var(--color-text)] mb-4">
+      <div class="bg-[color:var(--color-secondary)] p-6 sm:p-8 rounded-2xl shadow-lg">
+        <h2 class="text-xl sm:text-2xl font-bold text-[color:var(--color-text)] mb-4">
           Contacto
         </h2>
 
-        <p class="text-sm mb-6 text-gray-300">
+        <p class="text-sm sm:text-base mb-6 text-gray-300">
           ¿Querés escribirme directamente? Estas son las formas más rápidas de
           ponerte en contacto conmigo:
         </p>
 
         <!-- Correo -->
-        <div class="flex items-center gap-3 mb-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6">
           <GmailIcon class="w-6 h-6 text-[color:var(--color-primary)]" />
-          <a id="correo" href="mailto:contacto@ejemplo.com" class="hover:text-[color:var(--color-primary)] transition">
+          <a id="correo" href="mailto:contacto@ejemplo.com" class="hover:text-[color:var(--color-primary)] transition break-all">
             contacto@ejemplo.com
           </a>
           <button
             type="button"
             onclick="copyEmail()"
-            class="ml-2 text-xs px-2 py-1 bg-[color:var(--color-primary)]/20 text-[color:var(--color-primary)] rounded hover:bg-[color:var(--color-primary)]/30 transition cursor-pointer"
+            class="text-xs px-2 py-1 bg-[color:var(--color-primary)]/20 text-[color:var(--color-primary)] rounded hover:bg-[color:var(--color-primary)]/30 transition cursor-pointer"
           >
             Copiar
           </button>
@@ -220,7 +220,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
 
         <!-- Redes -->
         <h3 class="text-lg font-semibold mb-3">Redes sociales</h3>
-        <div class="flex flex-wrap gap-3 mb-8">
+        <div class="flex flex-wrap gap-3 mb-8 justify-center sm:justify-start">
           <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><InstagramIcon class="w-5 h-5" /></a>
           <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><LinkedInIcon class="w-5 h-5" /></a>
           <a href="#" class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"><TelegramIcon class="w-5 h-5" /></a>
@@ -239,8 +239,10 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
 
         <!-- Por qué contactarme -->
         <div class="bg-black/40 p-4 rounded-xl">
-          <h4 class="font-semibold mb-3">¿Por qué contactarme?</h4>
-          <ul class="space-y-2 text-sm">
+          <h4 class="font-semibold mb-3 text-base sm:text-lg">
+            ¿Por qué contactarme?
+          </h4>
+          <ul class="space-y-2 text-sm sm:text-base">
             <li>✅ Atención personalizada</li>
             <li>✅ Respuesta rápida</li>
             <li>✅ Asesoramiento sin compromiso</li>
