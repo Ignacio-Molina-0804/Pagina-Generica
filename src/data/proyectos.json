@@ -1,0 +1,20 @@
+[
+  {
+    "img": "/images/proyecto1.png",
+    "alt": "Proyecto 1",
+    "titulo": "Proyecto genérico 1",
+    "desc": "Ejemplo de presentación visual adaptable."
+  },
+  {
+    "img": "/images/proyecto2.png",
+    "alt": "Proyecto 2",
+    "titulo": "Proyecto genérico 2",
+    "desc": "Diseño limpio y enfoque visual equilibrado."
+  },
+  {
+    "img": "/images/proyecto3.png",
+    "alt": "Proyecto 3",
+    "titulo": "Proyecto genérico 3",
+    "desc": "Ideal para mostrar imágenes o contenido visual."
+  }
+]
