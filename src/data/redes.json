@@ -1,0 +1,10 @@
+[
+  { "nombre": "Instagram", "icono": "InstagramIcon", "url": "https://instagram.com" },
+  { "nombre": "LinkedIn", "icono": "LinkedInIcon", "url": "https://linkedin.com" },
+  { "nombre": "Telegram", "icono": "TelegramIcon", "url": "https://t.me" },
+  { "nombre": "X", "icono": "XIcon", "url": "https://x.com" },
+  { "nombre": "WhatsApp", "icono": "WhatsappIcon", "url": "https://wa.me" },
+  { "nombre": "TikTok", "icono": "TiktokIcon", "url": "https://tiktok.com" },
+  { "nombre": "Threads", "icono": "ThreadsIcon", "url": "https://threads.net" },
+  { "nombre": "Facebook", "icono": "FacebookIcon", "url": "https://facebook.com" }
+]

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import redes from "../data/redes.json";
 
 import WhatsappIcon from "../components/icons/WhatsappIcon.astro";
 import InstagramIcon from "../components/icons/InstagramIcon.astro";
@@ -10,6 +11,19 @@ import XIcon from "../components/icons/XIcon.astro";
 import TiktokIcon from "../components/icons/TiktokIcon.astro";
 import ThreadsIcon from "../components/icons/ThreadsIcon.astro";
 import FacebookIcon from "../components/icons/FacebookIcon.astro";
+
+// Mapeo para que el nombre del JSON coincida con el componente
+const iconos = {
+  WhatsappIcon,
+  InstagramIcon,
+  GmailIcon,
+  TelegramIcon,
+  LinkedInIcon,
+  XIcon,
+  TiktokIcon,
+  ThreadsIcon,
+  FacebookIcon
+};
 
 // Importar datos
 import servicios from "../data/servicios.json";
@@ -206,46 +220,20 @@ import proyectos from "../data/proyectos.json";
         <!-- Redes -->
         <h3 class="text-lg font-semibold mb-3">Redes sociales</h3>
         <div class="flex flex-wrap gap-3 mb-8 justify-center sm:justify-start">
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><InstagramIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><LinkedInIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><TelegramIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><XIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><WhatsappIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><TiktokIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><ThreadsIcon class="w-5 h-5" /></a
-          >
-          <a
-            href="#"
-            class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
-            ><FacebookIcon class="w-5 h-5" /></a
-          >
+          {
+            redes.map((red) => {
+              const Icono = iconos[red.icono as keyof typeof iconos];
+              return Icono ? (
+                <a
+                  href={red.url}
+                  title={red.nombre}
+                  class="bg-black/40 p-3 rounded-full hover:bg-[color:var(--color-primary)]/20 transition"
+                >
+                  <Icono class="w-5 h-5" />
+                </a>
+              ) : null;
+            })
+          }
         </div>
 
         <p class="text-sm text-gray-300 mb-6">
