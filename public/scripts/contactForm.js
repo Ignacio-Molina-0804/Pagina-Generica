@@ -11,11 +11,21 @@ function sendWhatsAppMessage() {
 }
 
 function copyEmail() {
-  const email = "contacto@ejemplo.com";
-  navigator.clipboard.writeText(email).then(() => {
-    const button = event.target;
-    const originalText = button.textContent;
-    button.textContent = "Copiado!";
-    setTimeout(() => (button.textContent = originalText), 2000);
-  });
+  const email = "contacto@ejemplo.com"; // tu correo
+  navigator.clipboard.writeText(email);
+
+  const button = event.target; // el botón que se clickeó
+  const originalText = button.textContent;
+
+  // Cambia el texto del botón
+  button.textContent = "¡Copiado!";
+  button.disabled = true;
+  button.classList.add("opacity-70");
+
+  // Vuelve al texto original después de 5 segundos
+  setTimeout(() => {
+    button.textContent = originalText;
+    button.disabled = false;
+    button.classList.remove("opacity-70");
+  }, 5000);
 }
