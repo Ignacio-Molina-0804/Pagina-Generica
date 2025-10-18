@@ -1,46 +1,97 @@
-# Astro Starter Kit: Basics
+# 🌐 Página Genérica (Astro + Tailwind)
 
-```sh
-npm create astro@latest -- --template basics
+Plantilla **one-page** moderna creada con **Astro** y **Tailwind CSS**.  
+Incluye secciones de **inicio**, **servicios**, **proyectos**, **contacto** y **menú móvil** totalmente responsive.
+
+---
+
+## 🚀 Requisitos
+
+- **Node.js** (recomendado ≥ 18)
+- **npm**
+
+---
+
+## 🧩 Inicio rápido
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+2. **Levantar servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Build de producción:**
+   ```bash
+   npm run build
+   ```
+
+4. **Vista previa del build:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 🗂️ Estructura principal
+
+```
+src/
+ ├─ layouts/
+ │   └─ Layout.astro          # Layout principal y meta SEO
+ ├─ pages/
+ │   └─ index.astro           # Página principal
+ ├─ components/
+ │   ├─ Header.astro          # Cabecera con menú
+ │   ├─ Footer.astro          # Pie de página
+ │   └─ icons/                # Iconos sociales como componentes
+ ├─ data/
+ │   ├─ servicios.json        # Lista de servicios
+ │   ├─ proyectos.json        # Proyectos destacados
+ │   └─ redes.json            # Redes sociales
+ └─ styles/
+     └─ global.css            # Variables y configuración de Tailwind
+
+public/
+ ├─ images/                   # Imágenes públicas
+ └─ scripts/                  # JS (menuHeader.js, contactForm-v2.js)
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## ⚙️ Personalización rápida
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Textos y listas:** editar los archivos JSON en `src/data/`.
+- **Imágenes:** reemplazar o agregar en `public/images/`.
+- **Correo / WhatsApp:** modificar en `public/scripts/contactForm-v2.js`.
+- **Redes sociales:** agregar una entrada en `src/data/redes.json` y su ícono correspondiente en `src/components/icons/`.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧠 Notas técnicas
 
-## 🧞 Commands
+- El menú móvil está controlado por `public/scripts/menuHeader.js`.
+- El layout carga la fuente **Poppins** desde Google Fonts.
+- Las variables de color están definidas en `src/styles/global.css` bajo el selector `:root`.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 💡 Buenas prácticas
 
-## 👀 Want to learn more?
+- Mantener los datos en archivos **JSON** para separar contenido y presentación.
+- Usar **imágenes optimizadas** dentro de `public/images/`.
+- Ajustar los **meta tags** (title, description, etc.) en `src/layouts/Layout.astro` para un mejor SEO.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## 🪪 Licencia
+
+Podés usar y modificar este proyecto libremente.  
+Si querés, añadí una licencia (por ejemplo, **MIT**) en el archivo `LICENSE`.
+
+---
+
+✨ **Hecho con Astro + Tailwind — adaptable, rápido y minimalista.**

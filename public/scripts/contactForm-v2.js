@@ -28,4 +28,4 @@ function copyEmail() {
     button.disabled = false;
     button.classList.remove("opacity-70");
   }, 5000);
-}
+} 
